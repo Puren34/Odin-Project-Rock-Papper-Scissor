@@ -20,7 +20,9 @@ function getHumanChoice(){
 }   
 
 function playRound (humanSelection, computerSelection){
-    if (humanSelection === "rock" && computerSelection === "scissor" || humanSelection === "paper" && computerSelection === "rock" || humanSelection == "scissor" && computerSelection == "paper"){
+    if (humanSelection === "rock" && computerSelection === "scissor" 
+      || humanSelection === "paper" && computerSelection === "rock" 
+      || humanSelection === "scissor" && computerSelection === "paper"){
         humanScore += 1
         return "you win"
     } else if (computerSelection === humanSelection) {     
@@ -44,4 +46,4 @@ function playGame() {
     console.log("Final Score - You: " + humanScore,"and Computer: " + computerScore);
 }
 
-playGame();
+playGame(); 
