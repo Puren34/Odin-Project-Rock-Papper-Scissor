@@ -13,7 +13,7 @@ function getComputerChoice(){
         return "scissor"; 
     }
 }
-// user input that not case-insensitive stored on "choice" variable, using .toLowerCase() 
+// user input that is case-insensitive stored on "choice" variable, using .toLowerCase() 
 function getHumanChoice(){
     const choice = prompt("Rock, Paper, or Scissor: ").toLowerCase();
     return choice;
