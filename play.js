@@ -21,8 +21,8 @@ function getHumanChoice(){
 
 function playRound (humanSelection, computerSelection){
     if (humanSelection === "rock" && computerSelection === "scissor" 
-      || humanSelection === "paper" && computerSelection === "rock" 
-      || humanSelection === "scissor" && computerSelection === "paper"){
+    || humanSelection === "paper" && computerSelection === "rock" 
+    || humanSelection === "scissor" && computerSelection === "paper"){
         humanScore += 1
         return "you win"
     } else if (computerSelection === humanSelection) {     
